@@ -25,7 +25,7 @@ nav ul {
   display: flex;
   align-items: center;
   position: relative;
-  gap: 23px;
+  gap: 20px;
 }
 nav ul li a {
   text-decoration: none;
@@ -50,23 +50,30 @@ border-radius: 10px;
   margin:0 auto;
   padding: 4px 14px;
 } */
-#ride {
-  display: inline-block; 
-  padding: 4px 14px; 
- 
-  text-align: center;
-  color: white; 
-  line-height: 33px; 
-  margin: 0 auto; 
+#items > li > a {
+  /* display: inline-block;  */
+  padding: 8px 14px;
+  color: white;
+  line-height: 33px;
+  /* text-align: center; */
+  /* margin: 0 auto;  */
 }
 
-#ride:hover {
+#items > li > a:hover {
   width: 56px; /* Adjusted width on hover */
-  background-color: rgb(60, 60, 60); /* Darker background color on hover */
-  border-radius: 10px; 
-
+  background-color: rgb(40, 40, 40); /* Darker background color on hover */
+  border-radius: 25px;
 }
-
+#items2 > a {
+  padding: 8px 14px;
+  color: white;
+  line-height: 33px;
+}
+#items2 > a:hover {
+  width: 56px; /* Adjusted width on hover */
+  background-color: rgb(40, 40, 40); /* Darker background color on hover */
+  border-radius: 25px;
+}
 
 .right {
   position: relative;
@@ -95,6 +102,34 @@ border-radius: 10px;
 /* navbar end */
 
 /* hero starts */
+
+#gps {
+  position: relative;
+  top: -33px;
+  left: 360px;
+}
+#gps > img {
+  rotate: 97deg;
+}
+#dot {
+  filter: invert(1);
+  position: relative;
+  top: -33px;
+  right: 11px;
+}
+#square {
+  position: relative;
+  top: -69px;
+  left: 13px;
+  filter: invert(1);
+}
+#line {
+  font-weight: 100;
+    position: relative;
+    left: -28px;
+    top: -9px;
+}
+
 .hero {
   display: flex;
   margin: 70px 70px;
@@ -169,6 +204,10 @@ border-radius: 10px;
   background-color: black;
   color: white;
 }
+.buttons button:hover {
+  cursor: pointer;
+  background-color: #333333;
+}
 .buttons a {
   padding-left: 20px;
   color: black;
@@ -182,8 +221,8 @@ border-radius: 10px;
   transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
   background-repeat: no-repeat;
   padding-bottom: 6px;
-  margin-left: 55px;
-    padding-left: 0;
+  margin-left: 25px;
+  padding-left: 0;
 }
 a:hover {
   background-size: 100% 6px, 100% 6px;
@@ -205,15 +244,15 @@ a:hover {
 .qr-text {
   display: inline-block;
   padding: 18px;
-    position: absolute;
-    top: 205px;
+  position: absolute;
+  top: 205px;
 }
-.qr-text svg{
+.qr-text svg {
   /* transform: translateX(2px);  */
   transition: transform 0.2s ease-in;
 }
-.qr-text svg:hover{
-  transform: translateX(10px); 
+.qr-text svg:hover {
+  transform: translateX(10px);
   cursor: pointer;
 }
 
@@ -231,7 +270,6 @@ a:hover {
   padding: 65px 0px 39px 60px;
 }
 
-
 /* footer starts */
 
 footer {
@@ -245,127 +283,112 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   position: relative;
-    top: 180px;
+  top: 180px;
 }
-footer >p{
+footer > p {
   margin-left: 65px;
   position: relative;
-    top: 108px;
-
+  top: 108px;
 }
 
-footer >img{
+footer > img {
   margin-left: 55px;
   position: relative;
-    top: 83px;
-
+  top: 83px;
 }
 
-.footer>ul{
+.footer > ul {
   list-style: none;
   font-size: 14px;
 }
-a{
+a {
   text-decoration: none;
   color: white;
 }
-.footer>ul>li:first-child{
+.footer > ul > li:first-child {
   font-size: 18px;
   font-weight: 500;
 }
-.footer >ul>li{
+.footer > ul > li {
   line-height: 38px;
 }
 
-
-
-
-
-.locatn>img{
-    filter: invert(1);
-    width: 15px;
-    rotate: 30deg;
-    position: relative;
-    left: 5px;
-    top: 2px;
-  
+.locatn > img {
+  filter: invert(1);
+  width: 15px;
+  rotate: 30deg;
+  position: relative;
+  left: 5px;
+  top: 2px;
 }
-.locatn>svg{
+.locatn > svg {
   position: relative;
   top: 2px;
   left: 10px;
 }
 
-.locatn{
+.locatn {
   position: relative;
-    display: flex;
-    gap: 14px;
-    margin-right: 27px;
-
-}
-#end{
-  margin-right: 27px;
-
-}
-
-
-
-.last{
   display: flex;
-    width: 90vw;
-    justify-content: space-between;
-    margin: auto;
-    position: relative;
-    top: 250px;
-    font-size: 14px;
-    font-weight: 500;
+  gap: 14px;
+  margin-right: 27px;
 }
-.social-media{
-  position: relative;
-    display: flex;
-    gap: 96px;
-    margin-left:3px;
+#end {
+  margin-right: 27px;
 }
 
-.playstore{
+.last {
+  display: flex;
+  width: 90vw;
+  justify-content: space-between;
+  margin: auto;
   position: relative;
-    width: 90vw;
-    margin-left: 60px;
-    bottom: -315px;
-    display: flex;
-    gap: 8px;
+  top: 250px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.social-media {
+  position: relative;
+  display: flex;
+  gap: 96px;
+  margin-left: 3px;
 }
 
-
-.end{
+.playstore {
   position: relative;
-    display: flex;
-    justify-content: space-between;
-    bottom: -375px;
-    margin: auto;
-    width: 90vw;
-    font-size: 12px;
-    color: #AFAFAF;
+  width: 90vw;
+  margin-left: 60px;
+  bottom: -315px;
+  display: flex;
+  gap: 8px;
 }
-.end > div> ul:first-child{
+
+.end {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  bottom: -375px;
+  margin: auto;
+  width: 90vw;
+  font-size: 12px;
+  color: #afafaf;
+}
+.end > div > ul:first-child {
   display: flex;
   list-style: none;
   position: relative;
   gap: 30px;
 }
-.end> div>ul>li>a{
-  color: #AFAFAF;
+.end > div > ul > li > a {
+  color: #afafaf;
 }
-.end> div>ul>li>a:hover{
-  color:#4B4B4B;
+.end > div > ul > li > a:hover {
+  color: #4b4b4b;
 }
-#fb:hover{
+#fb:hover {
   width: 48px;
-    height: 48px;
-    background-color: #282828;
-    padding: 16px;
-    border-radius: 10px;
+  height: 48px;
+  background-color: #282828;
+  padding: 16px;
+  border-radius: 10px;
 }
-
-
-

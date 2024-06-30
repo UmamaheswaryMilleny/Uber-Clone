@@ -12,16 +12,17 @@
     <div class="main">
       <nav>
         <div class="left">
-          <ul>
+          <ul id="items">
             <li>
-              <a href=""><img src="assets/uber.png" alt="" width="75" /></a>
+              <a href="" style="pointer-events: none;
+"><img src="assets/uber.png" alt="" width="75" /></a>
             </li>
             <li id="ride"><a href="">Ride</a></li>
-            <li><a href="">Drive</a></li>
-            <li><a href="">Business</a></li>
+            <li id="drive"><a href="">Drive</a></li>
+            <li id="business"><a href="">Business</a></li>
             <li>
               <select name="" id="">
-                <option value="About">About</option>
+                <option value="About" id="items3">About</option>
                 <option value="About">About</option>
                 <option value="About">About</option>
                 <option value="About">About</option>
@@ -30,15 +31,15 @@
           </ul>
         </div>
         <div class="right">
-          <ul>
-            <li>
+          <ul >
+            <li id="items2">
               <img src="assets/en2.svg" alt="" style="filter: invert(1)" /><a
                 href=""
                 >EN</a
               >
             </li>
-            <li><a href="">Help</a></li>
-            <li><a href="">Login in</a></li>
+            <li id="items2"><a href="">Help</a></li>
+            <li id="items2"><a href="">Login in</a></li>
             <li id="sign"><a href="">Sign up</a></li>
           </ul>
         </div>
@@ -51,9 +52,14 @@
           <h1>Go anywhere with Uber</h1>
           <h4>Request a ride, hop in, and go.</h4>
           <div class="buttons">
+            
             <input type="text" placeholder="Enter Location" />
-            <input type="text" placeholder="Enter Destination" />
-            <button style="background-color: white; color: black">
+            <span id="gps"><img src="assets/gps.svg" alt="" width="20"></span>
+            <span id="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" data-baseweb="icon"><title>search</title><path fill-rule="evenodd" clip-rule="evenodd" d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm5-2a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z" fill="currentColor"></path></svg></span>
+            <span id="line">|</span>
+            <input type="text" placeholder="Enter Destination" style="margin-top: -10px;" />
+            <span id="square"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" data-baseweb="icon"><title>search</title><path fill-rule="evenodd" clip-rule="evenodd" d="M14 10h-4v4h4v-4ZM7 7v10h10V7H7Z" fill="currentColor"></path></svg></span>
+            <button style="background-color: white; color: black;margin-left: -23px;">
               See prices
             </button>
           </div>
