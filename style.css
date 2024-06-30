@@ -40,12 +40,33 @@ nav ul li a {
   font-size: 14px;
   font-weight: 600;
 }
-#ride:hover{
+/* #ride:hover{
 width: 56px;
 height: 33px;
 border-radius: 10px;
   background-color: rgb(40, 40, 40);
+  align-items: center;
+  justify-content: center;
+  margin:0 auto;
+  padding: 4px 14px;
+} */
+#ride {
+  display: inline-block; 
+  padding: 4px 14px; 
+ 
+  text-align: center;
+  color: white; 
+  line-height: 33px; 
+  margin: 0 auto; 
 }
+
+#ride:hover {
+  width: 56px; /* Adjusted width on hover */
+  background-color: rgb(60, 60, 60); /* Darker background color on hover */
+  border-radius: 10px; 
+
+}
+
 
 .right {
   position: relative;
@@ -154,13 +175,15 @@ border-radius: 10px;
   text-decoration: none;
   background-image: linear-gradient(transparent calc(100% - 1px), #000000 1px),
     linear-gradient(transparent calc(100% - 1px), #cbcbcb 1px);
-  background-size: 0% 6px, 100% 6px;
+  background-size: 0% 10px, 100% 6px;
   background-position: 0 bottom, 0 bottom;
   -webkit-transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
   -moz-transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
   background-repeat: no-repeat;
   padding-bottom: 6px;
+  margin-left: 55px;
+    padding-left: 0;
 }
 a:hover {
   background-size: 100% 6px, 100% 6px;
@@ -186,12 +209,14 @@ a:hover {
     top: 205px;
 }
 .qr-text svg{
-  transform: translateX(0px); /* Initial position at 0px */
+  /* transform: translateX(2px);  */
   transition: transform 0.2s ease-in;
 }
 .qr-text svg:hover{
   transform: translateX(10px); 
+  cursor: pointer;
 }
+
 .qr1,
 .qr2 {
   width: 549px;
@@ -206,16 +231,36 @@ a:hover {
   padding: 65px 0px 39px 60px;
 }
 
+
+/* footer starts */
+
 footer {
   height: 955px;
   background-color: black;
+  margin-top: -73px;
 }
 
 .footer {
   margin-left: 65px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+    top: 180px;
 }
+footer >p{
+  margin-left: 65px;
+  position: relative;
+    top: 108px;
+
+}
+
+footer >img{
+  margin-left: 55px;
+  position: relative;
+    top: 83px;
+
+}
+
 .footer>ul{
   list-style: none;
   font-size: 14px;
@@ -228,6 +273,9 @@ a{
   font-size: 18px;
   font-weight: 500;
 }
+.footer >ul>li{
+  line-height: 38px;
+}
 
 
 
@@ -238,9 +286,26 @@ a{
     width: 15px;
     rotate: 30deg;
     position: relative;
-    left: -6px;
+    left: 5px;
     top: 2px;
   
+}
+.locatn>svg{
+  position: relative;
+  top: 2px;
+  left: 10px;
+}
+
+.locatn{
+  position: relative;
+    display: flex;
+    gap: 14px;
+    margin-right: 27px;
+
+}
+#end{
+  margin-right: 27px;
+
 }
 
 
@@ -251,7 +316,7 @@ a{
     justify-content: space-between;
     margin: auto;
     position: relative;
-    top: 400px;
+    top: 250px;
     font-size: 14px;
     font-weight: 500;
 }
@@ -259,13 +324,14 @@ a{
   position: relative;
     display: flex;
     gap: 96px;
+    margin-left:3px;
 }
 
 .playstore{
   position: relative;
     width: 90vw;
-    margin-left: 56px;
-    bottom: -480px;
+    margin-left: 60px;
+    bottom: -315px;
     display: flex;
     gap: 8px;
 }
@@ -275,7 +341,7 @@ a{
   position: relative;
     display: flex;
     justify-content: space-between;
-    bottom: -540px;
+    bottom: -375px;
     margin: auto;
     width: 90vw;
     font-size: 12px;
