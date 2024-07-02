@@ -25,7 +25,7 @@ nav ul {
   display: flex;
   align-items: center;
   position: relative;
-  gap: 20px;
+  /* gap: 20px; */
 }
 nav ul li a {
   text-decoration: none;
@@ -54,7 +54,7 @@ border-radius: 10px;
   /* display: inline-block;  */
   padding: 8px 14px;
   color: white;
-  line-height: 33px;
+  line-height: 25px;
   /* text-align: center; */
   /* margin: 0 auto;  */
 }
@@ -69,10 +69,34 @@ border-radius: 10px;
   color: white;
   line-height: 33px;
 }
-#items2 > a:hover {
-  width: 56px; /* Adjusted width on hover */
-  background-color: rgb(40, 40, 40); /* Darker background color on hover */
+#items2 >a:hover {
+  background-color: rgb(40, 40, 40);
+    /* padding-left: 21px; */
+    border-radius: 25px;
+  /* width: 56px; */
+  
+}
+#nav-hover {
+  padding: 8px 14px;
+  color: white;
+  line-height: 18px;
+}
+#nav-hover:hover{
+  background-color: rgb(40, 40, 40);
+    padding-left: 21px;
+    border-radius: 25px;
+
+}
+#items3:hover{
+  background-color: rgb(40, 40, 40);
+  /* padding-left: 21px; */
   border-radius: 25px;
+
+}
+#items3 {
+  padding: 7px 7px;
+  color: white;
+  line-height: 18px;
 }
 
 .right {
@@ -313,12 +337,12 @@ a {
   line-height: 38px;
 }
 
-.locatn > img {
+.locatn  img {
   filter: invert(1);
   width: 15px;
   rotate: 30deg;
   position: relative;
-  left: 5px;
+  left: -6px;
   top: 2px;
 }
 .locatn > svg {
@@ -330,7 +354,7 @@ a {
 .locatn {
   position: relative;
   display: flex;
-  gap: 14px;
+  /* gap: 14px; */
   margin-right: 27px;
 }
 #end {
@@ -350,7 +374,7 @@ a {
 .social-media {
   position: relative;
   display: flex;
-  gap: 96px;
+  gap: 65px;
   margin-left: 3px;
 }
 
@@ -361,6 +385,22 @@ a {
   bottom: -315px;
   display: flex;
   gap: 8px;
+}
+
+
+#locatn-hover{
+  padding: 10px 12px;
+  color: white;
+  /* line-height: 33px; */
+
+}
+
+#locatn-hover:hover {
+  /* width: 48px;
+  height: 48px; */
+  background-color: #282828;
+  /* padding: 16px; */
+  border-radius: 10px;
 }
 
 .end {
@@ -385,10 +425,21 @@ a {
 .end > div > ul > li > a:hover {
   color: #4b4b4b;
 }
-#fb:hover {
-  width: 48px;
-  height: 48px;
+.footer1 li a:hover{
+  color: #4b4b4b;
+}
+
+#icon-hover{
+  padding: 7px 14px;
+  color: white;
+  line-height: 33px;
+
+}
+
+#icon-hover:hover {
+  /* width: 48px;
+  height: 48px; */
   background-color: #282828;
-  padding: 16px;
+  /* padding: 16px; */
   border-radius: 10px;
 }
