@@ -25,7 +25,6 @@ nav ul {
   display: flex;
   align-items: center;
   position: relative;
-  /* gap: 20px; */
 }
 nav ul li a {
   text-decoration: none;
@@ -40,40 +39,23 @@ nav ul li a {
   font-size: 14px;
   font-weight: 600;
 }
-/* #ride:hover{
-width: 56px;
-height: 33px;
-border-radius: 10px;
-  background-color: rgb(40, 40, 40);
-  align-items: center;
-  justify-content: center;
-  margin:0 auto;
-  padding: 4px 14px;
-} */
+
 #items > li > a {
-  /* display: inline-block;  */
   padding: 8px 14px;
-  /* color: white; */
   line-height: 25px;
-  /* text-align: center; */
-  /* margin: 0 auto;  */
 }
 
 #items > li > a:hover {
-  width: 56px; /* Adjusted width on hover */
-  background-color: rgb(40, 40, 40); /* Darker background color on hover */
+  width: 56px;
+  background-color: rgb(40, 40, 40);
   border-radius: 25px;
 }
 #items2 > a {
   padding: 8px 14px;
-  /* color: white; */
-  /* line-height: 33px; */
 }
 #items2 > a:hover {
   background-color: rgb(40, 40, 40);
-  /* padding-left: 21px; */
   border-radius: 25px;
-  /* width: 56px; */
 }
 #nav-hover {
   padding: 8px 14px;
@@ -82,16 +64,13 @@ border-radius: 10px;
 }
 #nav-hover:hover {
   background-color: rgb(40, 40, 40);
-  /* padding-left: 21px; */
   border-radius: 25px;
 }
 #items3:hover {
   background-color: rgb(40, 40, 40);
-  /* padding-left: 21px; */
   border-radius: 25px;
   width: 80px;
   text-align: left;
-  /* position: fixed; */
 }
 #items3 {
   padding: 7px 7px;
@@ -100,9 +79,6 @@ border-radius: 10px;
   width: 80px;
   text-align: left;
 }
-
-
-
 
 .right {
   position: relative;
@@ -242,62 +218,49 @@ border-radius: 10px;
   padding-left: 20px;
   color: black;
   text-decoration: none;
-  /* background-image: linear-gradient(transparent calc(100% - 1px), #000000 1px),
-    linear-gradient(transparent calc(100% - 1px), #cbcbcb 1px);
-  background-size: 0% 10px, 100% 6px;
-  background-position: 0 bottom, 0 bottom; */
-  /* -webkit-transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
-  -moz-transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1); */
-  /* transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
-  background-repeat: no-repeat; */
   padding-bottom: 6px;
   margin-left: 25px;
   padding-left: 0;
 }
-/* a:hover {
-  background-size: 100% 6px, 100% 6px;
-} */
 
-#border-hover{
-     border-bottom: 1.5px solid #CBCBCB;
+#border-hover {
+  border-bottom: 1.5px solid #cbcbcb;
 }
 
-
-#border-hover::after{
-  content: '';
+#border-hover::after {
+  content: "";
   height: 1.5px;
-    width: 0;
-    background: #000000;
-    position: absolute;
-    left: 150px;
-    bottom: 165px;
-    transition: 0.5s;}
+  width: 0;
+  background: #000000;
+  position: absolute;
+  left: 150px;
+  bottom: 165px;
+  transition: 0.5s;
+}
 
-#border-hover:hover::after{
+#border-hover:hover::after {
   width: 53%;
 }
-#border-hover2::after{
-  content: '';
+#border-hover2::after {
+  content: "";
   height: 1.5px;
-    width: 0;
-    background: #000000;
-    position: absolute;
-    left: 150px;
-    bottom: 187px;
-    transition: 0.5s;
+  width: 0;
+  background: #000000;
+  position: absolute;
+  left: 150px;
+  bottom: 187px;
+  transition: 0.5s;
 }
 #items option {
-  background-color: #fff; /* Background color of options */
-  color: #333; /* Text color of options */
+  background-color: #fff;
+  color: #333;
 }
-#border-hover2:hover::after{
+#border-hover2:hover::after {
   width: 38%;
 }
-#border-hover2{
-  border-bottom: 1.5px solid #CBCBCB;
+#border-hover2 {
+  border-bottom: 1.5px solid #cbcbcb;
 }
-
-
 
 /* section two starts */
 
@@ -319,7 +282,6 @@ border-radius: 10px;
   top: 205px;
 }
 .qr-text svg {
-  /* transform: translateX(2px);  */
   transition: transform 0.2s ease-in;
 }
 .qr-text svg:hover {
@@ -401,7 +363,6 @@ a {
 .locatn {
   position: relative;
   display: flex;
-  /* gap: 14px; */
   margin-right: 27px;
 }
 #end {
@@ -437,14 +398,10 @@ a {
 #locatn-hover {
   padding: 10px 12px;
   color: white;
-  /* line-height: 33px; */
 }
 
 #locatn-hover:hover {
-  /* width: 48px;
-  height: 48px; */
   background-color: #282828;
-  /* padding: 16px; */
   border-radius: 10px;
 }
 
@@ -481,9 +438,6 @@ a {
 }
 
 #icon-hover:hover {
-  /* width: 48px;
-  height: 48px; */
   background-color: #282828;
-  /* padding: 16px; */
   border-radius: 10px;
 }
